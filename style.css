@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #973101;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.profile{
+    display: flex;
+}
+
+.profile-info h1{
+    color: #f1f0ef;
+}
+
+.profile-img img {
+    width: 90px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.nav-bar{
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+}
+
+.socials img{
+    width: 60px;
+    height: 40px;
+}
+
+footer{
+    background-color: #973101;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: #080808;
+    font-size: 20px;
+}
