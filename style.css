@@ -1,3 +1,4 @@
+
 header {
     display: flex;
     justify-content: space-between;
@@ -5,6 +6,8 @@ header {
     background-color: #973101;
     padding-top: 5px;
     padding-left: 10px;
+    top: 0;
+    position: sticky;
 }
 .profile{
     display: flex;
@@ -39,4 +42,5 @@ footer{
     text-align: center;
     color: #080808;
     font-size: 20px;
+    padding: 5px;
 }
