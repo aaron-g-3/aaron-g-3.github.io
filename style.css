@@ -7,19 +7,27 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #973101;
-    padding-top: 5px;
-    padding-left: 10px;
+    padding: 4px 10px 4px 10px;
     top: 0;
     position: sticky;
+    min-height: 70px;
 }
 .profile{
     display: flex;
     align-items: center;
 }
 
-.profile-info h1{
-    color: #923703;
-    font-weight: center;
+.profile-info h1,
+.profile-info p,
+.profile-info a {
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.profile-info h1 {
+    font-weight: 600;
 }
 
 .profile-img img {
@@ -50,11 +58,20 @@ a:hover{
 
 footer{
     background-color: #973101;
-    bottom: 0;
-    position: fixed;
     width: 100%;
     text-align: center;
     color: #fdfcfc;
-    font-size: 20px;
-    padding: 5px;
+    font-size: 18px;
+    padding: 6px 0;
+    position: static;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main, .content-area {
+    flex: 1;
 }

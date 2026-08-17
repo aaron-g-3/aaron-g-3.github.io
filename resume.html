@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Publications</title>
+        <title>Resume</title>
         <link rel="shortcut icon" href="images/logo.png">
         <link rel="stylesheet" href="style.css">
         <style>
             .content{
-                background-image: url("images/cs-img.svg");
-                min-height: 700px;
+                background-image: url("images/7Day.png");
+                background-size: auto 100%;
+                background-position: center center;
                 background-repeat: no-repeat;
+                min-height: calc(100vh - 150px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .resume-link {
+                font-size: 32px;
+                font-weight: bold;
+                color: #7a3400;
+                text-decoration: underline;
+                background: rgba(255,255,255,0.5);
+                padding: 10px 20px;
+                border-radius: 10px;
             }
         </style>
     </head>
@@ -39,7 +54,7 @@
         </header>
 
         <div class="content">
-
+            <a class="resume-link" href="resume.pdf" target="_blank">Resume</a>
         </div>
 
         <footer>

@@ -7,9 +7,80 @@
         <link rel="stylesheet" href="style.css">
 
         <style>
-            p {
-                font-size: 20px;
+            html, body {
+                margin: 0;
+                height: 100%;
+                overflow: hidden;
             }
+
+            body {
+                background: #f5f2ee;
+            }
+
+            .about-layout {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                width: 95%;
+                max-width: 1400px;
+                margin: 20px auto;
+                position: relative;
+                z-index: 1;
+            }
+
+            .about-left-photo,
+            .about-photo {
+                flex: 1.7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .about-left-photo img,
+            .about-photo img {
+                width: 100%;
+                max-width: 1400px;
+                height: auto;
+                border-radius: 18px;
+                display: block;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            }
+
+            .about-copy {
+                flex: 1.8;
+                background: rgba(255, 255, 255, 0.6);
+                padding: 20px 30px;
+                border-radius: 12px;
+                max-height: calc(100vh - 180px);
+                overflow: auto;
+                text-align: center;
+            }
+
+            p {
+                font-size: 30px;
+            }
+
+            .about-copy p:first-of-type {
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .about-copy p:nth-of-type(2),
+            .about-copy ol {
+                font-size: 34px;
+                text-align: center;
+            }
+
+            .about-copy ol {
+                list-style-position: inside;
+                padding-left: 0;
+            }
+
+            .about-copy li {
+                margin-left: 0;
+            }
+
         </style>
     </head>
     <body>
@@ -39,17 +110,28 @@
 
         </header>
         
-        <div>
-             <p style="color: #77cccc;">
-                My name is Aaron Gonzalez, and I am a Mechanical Engineering student at the University of Texas Rio Grande Valley. I am currently in my senior year, and I will be graduating in 2027.<br> I have a strong interest in software development, web development, and data analysis. I enjoy learning new technologies and applying them to real-world problems. In my free time, I like to work on personal projects, contribute to open-source projects, and participate in hackathons.
-             </p>
+        <div class="about-layout">
+            <div class="about-left-photo">
+                <img src="images/bbq.png" alt="Decorative image">
+            </div>
 
-             <p>Hobbies:</p>
-             <ol type="i"> <!--ordered list-->
-                <li>Traveling</li>
-                <li>Fishing</li>
-                <li>Video Games</li>
-             </ol>
+            <div class="about-copy">
+                 <p style="color: #7c3801;">
+                    My name is Aaron Gonzalez. I am currently in my senior year, and I will be graduating in 2027. I am a mechanical engineering student with starting a minor in computer science. I am passionate about applying engineering principles, problem-solving, and technology to develop practical solutions to real-world challenges. My background in mechanical engineering has given me experience with design, analysis, and technical problem-solving, while my computer science minor has strengthened my programming and computational skills. As I approach graduation, I look forward to continuing to grow my technical abilities, gaining hands-on industry experience, and pursuing a career where I can combine mechanical engineering and technology. I enjoy learning new technologies and hope to applythem to real-world problems.
+                 </p>
+
+                 <p>Hobbies:</p>
+                 <ol type="i"> <!--ordered list-->
+                    <li>Traveling</li>
+                    <li>Fishing</li>
+                    <li>Video Games</li>
+                    <li>Barbecuing</li>
+                 </ol>
+            </div>
+
+            <div class="about-photo">
+                <img src="images/28fish.png" alt="Aaron in a scenic setting">
+            </div>
         </div>
 
         <footer>
