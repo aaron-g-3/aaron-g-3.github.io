@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Me</title>
+        <link rel="shortcut icon" href="images/logo.png">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="contact.js"></script>
+
+        <style>
+            form{
+                width: fit-content;
+                margin: auto;
+                padding: 5px;
+                text-align: left;
+            }
+
+            legend{
+                text-align: center;
+            }
+
+            fieldset{
+                padding: 2px 3px 7px;
+                border-radius: 4px;
+            }
+
+            label{
+                display: inline-block;
+                vertical-align: top;
+                width: 75px;
+                color: #813401;
+            }
+
+            input, textarea{
+                width: 250px;
+                border: 1px solid #883702;
+                border-radius: 4px;
+                margin-bottom: 3px;
+            }
+
+            .sbmt-btn{
+                padding: 2px 5px;
+                width:fit-content;
+                font-size: 13px;
+                color: #883802;
+                background-color: #eeeeee;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="images/logo.svg">
+                </div>
+
+                <div class="profile-info">
+                    <h1>Aaron Gonzalez</h1>
+                    <p><a href="mailto:aaron.gonzalez13@utrgv.edu">aaron.gonzalez13@utrgv.edu</a></p>
+                </div>
+            </div>
+            
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html" class="current">Contact</a></li>
+            </ul>
+            <div class="socials">
+                <a href="https://github.com/aaron-g-3" target="_blank"><img alt="Github icon" src="images/github-logo.svg"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo.svg"></a>
+            </div>
+        </header>
+
+        <div>
+            <form name="contactMe" onsubmit="sendMessage();">  
+                <fieldset>
+                    <legend>Contact Me</legend>
+                    <label>Name:</label>
+                    <input name="uname" type="text"><br>
+
+                    <label>Phone:</label>
+                    <input name="phone" type="tel"><br>
+
+                    <label>Message:</label>
+                    <textarea name="message" rows="5" cols="50"></textarea><br>
+
+                    <input class="sbmt-btn" type="submit" value="Send Email!">
+                </fieldset>
+            </form>
+        </div>
+
+        <footer>
+            Copyright &copy; Aaron Gonzalez
+        </footer>
+        
+    </body>
+</html>

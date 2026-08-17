@@ -4,22 +4,56 @@
     <head>
         <title>Aaron's Portfolio</title>
         <link rel="shortcut icon" href = "images/logo.png">
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            p {
+                font-size: 20px;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <h1>Aaron's Portfolio</h1>
-            <ul>
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="images/logo.svg">
+                </div>
+
+                 <div class="profile-info">
+                    <h1>Aaron Gonzalez</h1>
+                    <p><a href="mailto:aaron.gonzalez13@utrgv.edu">aaron.gonzalez13@utrgv.edu</a></p>
+                </div>
+            </div>
+
+            <ul class="nav-bar">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html"class="current">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="socials">
+                <a href="https://github.com/aaron-g-3" target="_blank"><img alt="Github icon" src="images/github-logo.svg"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo.svg"></a>
+            </div>
+
         </header>
         
         <div>
+             <p style="color: #77cccc;">
+                My name is Aaron Gonzalez, and I am a Mechanical Engineering student at the University of Texas Rio Grande Valley. I am currently in my senior year, and I will be graduating in 2027.<br> I have a strong interest in software development, web development, and data analysis. I enjoy learning new technologies and applying them to real-world problems. In my free time, I like to work on personal projects, contribute to open-source projects, and participate in hackathons.
+             </p>
 
+             <p>Hobbies:</p>
+             <ol type="i"> <!--ordered list-->
+                <li>Traveling</li>
+                <li>Fishing</li>
+                <li>Video Games</li>
+             </ol>
         </div>
 
         <footer>
-  
+             Copyright &copy; Aaron Gonzalez
+        </footer>
+    </body>
+</html>
